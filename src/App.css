@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 550px;
+  height: 500px
+}
+
+.player1, .player2, .empty, .slot {
+  border: 3px solid rgb(59, 179, 89);
+  border-radius: 50px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.empty {
+  background-color: rgb(255, 255, 255);
+}
+
+.player1 {
+  background-color: rgb(0, 110, 255);
+}
+
+.player2 {
+  background-color: rgb(252, 0, 0);
+}
+
+.scoreboard {
+  display: flex;
+  margin-top: 20px;
+}
+
+.scoreboard > div {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.active-player {
+  border: 3px solid rgb(24, 134, 24);
+  border-radius: 20px;
+}
+.player1-style{
+  color: rgb(0, 110, 255);
+}
+.player2-style{
+  color: rgb(255, 0, 0);
+}
+.active-player.player1-style{
+  border-color: rgb(0, 110, 255);
+}
+.active-player.player2-style{
+  border-color: rgb(255, 0, 0);
+}
+
+.drop-red {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.drop-red:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.drop-blue {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.drop-blue:hover {
+  background-color: rgb(0, 110, 255);
+}
+
+h3{
+  margin: 10px;
+}
+button{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 6px 30px;
+    margin: 15px;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
